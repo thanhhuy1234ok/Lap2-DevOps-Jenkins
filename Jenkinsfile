@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'thanhhuy1234ok/lap2-devops-jenkins'
-        DOCKER_TAG = 'main'
+        DOCKER_TAG = 'tagname'
     }
 
     stages {
