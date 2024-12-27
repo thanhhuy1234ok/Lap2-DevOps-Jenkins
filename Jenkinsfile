@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'thanhhuy1234ok/Lap2-DevOps-Jenkins'
+        DOCKER_IMAGE = 'thanhhuy1234ok/lap2-devops-jenkins'
         DOCKER_TAG = 'main'
     }
 
