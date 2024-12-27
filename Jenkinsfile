@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'phamminhthao/jenkins'
+        DOCKER_IMAGE = 'thanhhuy1234ok/Lap2-DevOps-Jenkins'
         DOCKER_TAG = 'main'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/Trunks-Pham/cicd-jenkins.git'
+                git branch: 'main', url: 'github.com/thanhhuy1234ok/Lap2-DevOps-Jenkins'
             }
         }
 
