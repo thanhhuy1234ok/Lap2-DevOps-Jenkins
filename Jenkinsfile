@@ -24,7 +24,10 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                echo 'Running tests...'
+                script {
+                    echo "DOCKER_IMAGE: ${DOCKER_IMAGE}"
+                    echo "DOCKER_TAG: ${DOCKER_TAG}"
+                }
             }
         }
 
