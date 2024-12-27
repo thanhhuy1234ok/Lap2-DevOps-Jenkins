@@ -33,7 +33,8 @@ pipeline {
                 script {
                     // Đăng nhập và đẩy image lên Docker Hub
                     docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
-                        docker.image("${DOCKER_IMAGE}:${DOCKER_TAG}").push()
+                        // docker.image("${DOCKER_IMAGE}:${DOCKER_TAG}").push()
+                        docker.image("thanhhuy1234ok/lap2-devops-jenkins:main").push()
                     }
                 }
             }
